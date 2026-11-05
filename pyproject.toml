@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-worktree-inspector"
+version = "0.1.0"
+description = "Read-only Git worktree observations for agent tools"
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+git-worktree-inspector = "git_worktree_inspector.cli:main"
+
+[tool.setuptools]
+packages = ["git_worktree_inspector"]
